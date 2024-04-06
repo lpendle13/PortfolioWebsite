@@ -1,0 +1,16 @@
+@media screen and (max-width: 640px) {
+    .top-bar-left {
+    display: none;
+    }
+    .navShadow {
+      box-shadow: 0px 7px 10px -10px #4c2b63;
+    }
+}
+
+.is-active {
+    font-weight: 500;
+}
+
+#menu-btn {
+    scale: 150%;
+}
