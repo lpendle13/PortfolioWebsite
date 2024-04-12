@@ -150,19 +150,39 @@ $header-margin-bottom: 0;
 $header-styles: (
   small: (
     'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 16),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 20),
     'h4': ('font-size': 18),
     'h5': ('font-size': 17),
     'h6': ('font-size': 16),
+    'p': ('font-size': 14),
   ),
   medium: (
     'h1': ('font-size': 30),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 20),
-    'h4': ('font-size': 25),
+    'h2': ('font-size': 36),
+    'h3': ('font-size': 30),
+    'h4': ('font-size': 28),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
+    'p': ('font-size': 20),
+  ),
+  large: (
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 48),
+    'h3': ('font-size': 40),
+    'h4': ('font-size': 36),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+    'p': ('font-size': 30),
+  ),
+  xlarge: (
+    'h1': ('font-size': 30),
+    'h2': ('font-size': 60),
+    'h3': ('font-size': 50),
+    'h4': ('font-size': 42),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+    'p': ('font-size': 36),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -299,11 +319,11 @@ $button-font-weight: null;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
+$button-background: $dark-gray;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
-$button-radius: $global-radius;
+$button-radius: 2rem;
 $button-border: 1px solid transparent;
 $button-hollow-border-width: 1px;
 $button-sizes: (
@@ -469,7 +489,8 @@ $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
-$input-radius: $global-radius;
+$input-radius: 1rem;
+$input-margin: 1rem;
 $form-button-radius: $global-radius;
 
 // 21. Label
