@@ -1,7 +1,63 @@
+body {
+    background-color: #f2edf5;
+}
+.is-active {
+    font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6, p, a {
+    color: #11001c;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #cbc0d3;
+}
+nav {
+    width: 100%;
+    margin: auto;
+}
+h1 {
+    float: left;
+    margin-left: 1rem;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    float: right;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 1rem;
+    padding-left: 0;
+}
+header nav ul {
+    float: right;
+    font-size: 20px;
+}
+header nav ul li{
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   }
+
+header nav li{
+    float: left;
+    list-style-type: none;
+}
+#menu-btn {
+    float: right;
+    color: #11001c;
+}
+
 @media screen and (max-width: 639px) { /* for smaller screens */
-    .top-bar-left {
-    display: none;
-    }
     .navShadow {
       box-shadow: 0px 7px 10px -10px #4c2b63;
     }
@@ -9,58 +65,66 @@
         scale: 80%;
         margin: 0rem;
     }
+    header {
+        height: 60px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 24px;
+        margin-left: 1rem;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
     .about {
         padding-top: 5%;
     }
-}
-.is-active {
-    font-weight: 500;
-}
-main {
-    margin-bottom: -3rem;
+    #menu-btn{
+        display: block;
+        height: 30px;
+        width: 100%;
+    }
+    .menu-button {
+        max-width: 30px;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        background-image: url(/images/test.jpg);
+        object-fit: cover;
+    }
+    nav ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #cbc0d3;
+    }
+    header nav ul{
+        overflow: hidden;
+        height: 0;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+    header nav ul li a{
+        padding: 10px;
+        display: block;
+        width: 100%;
+        margin: 0;    
+    }
+    .hamburger-menu {
+        display: block;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
-#menu-btn {
-    scale: 150%;
-    color: #11001c;
-}
-
-footer {
-    background-color: #cbc0d3;
-    width: 100%;
-    max-height: 200px;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    align-items: center;
-    text-align: center;
-}
-
-.footerImgs {
-    margin: 0.2rem;
-    width: 50px;
-    height: 50px;
-    background-color: white; /* remove later */
-    border-radius: 100%;
-}
 
 .about {
-    background-color: #f2edf5;
-}
-
-.mask-box {
-    background-color: #fcfbfe;
-    background-image: url(/images/bgshape-topmask.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    float: left;
+    padding-top: 0;
 }
 
 .content-left {
     padding-left: 7.5%;
     padding-top: 5%;
-    @media screen and (max-width: 639px) {
-        padding-top: 0;
-    }
 }
 
 .content-left p {
@@ -71,25 +135,12 @@ footer {
 .profile-img { 
     height: 100% auto;
     max-width: 40%;
-    @media screen and (max-width: 639px) {
-        max-width: 50%;
-        -webkit-mask-size: 200%;
-        mask-size: 200%;
-        padding-top: 0;
-        }
     float: right;
     position: relative;
-    -webkit-mask-image: url(/images/bgshape-topmask.svg);
-    mask-image: url(/images/bgshape-topmask.svg);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 250%;
-    mask-size: 250%;
-    -webkit-mask-position: right top;
-    mask-position: right top;   
     padding: 5%;
-    padding-bottom: 10%;
-
+    @media screen and (max-width: 639px) {
+        max-width: 50%;
+        }
 }
 
 .content-left a.button {
@@ -116,37 +167,61 @@ footer {
         scale: 200%;
     }
 }
-
-.projects h3, .featured-projects {
+.bg-img-white {
     position: relative;
-    top: -4rem;
+    top: -7rem;
+    @media screen and (min-width: 350px) {
+        top: -7rem;
+    }
     @media screen and (min-width: 500px) {
-        top: -9rem;
-    }
-    @media screen and (min-width: 640px) {
-        top: -8rem;
-    }
-    @media screen and (min-width: 1024px) {
         top: -10rem;
     }
-    @media screen and (min-width: 1200px) {
-        top: -12rem;
+    @media screen and (min-width: 800px) {
+        top: -14rem;
+    }
+    @media screen and (min-width: 1024px) {
+        top: -20rem;
     }
     @media screen and (min-width: 1600px) {
+        top: -30rem;
+    }
+    @media screen and (min-width: 2000px) {
+        top: -45rem;
+    }
+}
+.projects {
+    position: relative;
+    top: -12rem;
+    @media screen and (min-width: 350px) {
+        top: -12rem;
+    }
+    @media screen and (min-width: 500px) {
         top: -16rem;
     }
-    background-color:transparent;
-}
-.featured-projects {
-    position: relative;
-    top: -4rem;
+    @media screen and (min-width: 640px) {
+        top: -18rem;
+    }
+    @media screen and (min-width: 800px) {
+        top: -24rem;
+    }
+    @media screen and (min-width: 1024px) {
+        top: -30rem;
+    }
+    @media screen and (min-width: 1600px) {
+        top: -45rem;
+    }
+    @media screen and (min-width: 2000px) {
+        top: -60rem;
+    }
 }
 
 h3 {
     width: 80%;
     text-align: right;
 }
-
+.featured-projects {
+    background-color: #fcfbfe;
+}
 .featured-project {
     border-radius: 30px;
     border: 1px solid #4c2b63;
@@ -258,6 +333,11 @@ h3 {
     }
 }
 
+
+
+
+
+
 .contact {
     position: relative;
     background-image: url(/images/bgshape-bottom.svg);
@@ -344,4 +424,27 @@ input, textarea {
         margin-top: 10rem;
         padding-bottom: 10rem;
     }
+}
+
+footer {
+    background-color: #cbc0d3;
+    width: 100%;
+    max-height: 200px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+    text-align: center;
+}
+hr {
+    text-decoration: none;
+    width: 70%;
+    stroke: 1px;
+    color: #4c2b63;
+}
+.footerImgs {
+    margin: 0.2rem;
+    width: 50px;
+    height: 50px;
+    background-color: white; /* remove later */
+    border-radius: 100%;
 }
