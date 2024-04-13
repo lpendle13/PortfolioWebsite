@@ -1,12 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* GENERIC */
+* {
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: #f2edf5;
 }
 .is-active {
     font-weight: 500;
 }
+.button {
+    background-color: #4c2b63;
+    color: #fcfbfe;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 30px;
+}
 h1, h2, h3, h4, h5, h6, p, a {
     color: #11001c;
 }
+h2, h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+}
+@media screen and (min-width: 640px) {
+    h2, h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h2, h3 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    h2, h3 {
+        font-size: 60px;
+    }
+    h4 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 30px;
+    }
+}
+/* NAVBAR */
+
 header {
     width: 100%;
     height: 80px;
@@ -19,10 +82,12 @@ nav {
 h1 {
     float: left;
     margin-left: 1rem;
-    margin-top: 17.5px;
-    margin-bottom: 17.5px;
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
     font-size: 30px;
+    font-weight: 500;
 }
+
 a {
     text-decoration: none;
 }
@@ -30,10 +95,15 @@ a {
 .hamburger-menu {
     float: right;
     display: flex;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: 1rem;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-right: 2rem;
     padding-left: 0;
+    @media screen and (min-width: 1600px) {
+        font-size: 24px;
+        margin-top: 25.5px;
+        margin-bottom: 25.5px;
+    }
 }
 header nav ul {
     float: right;
@@ -44,8 +114,7 @@ header nav ul li{
     text-align: center;
     width: 100%;
     margin: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
    }
 
 header nav li{
@@ -57,7 +126,7 @@ header nav li{
     color: #11001c;
 }
 
-@media screen and (max-width: 639px) { /* for smaller screens */
+@media screen and (max-width: 639px) {
     .navShadow {
       box-shadow: 0px 7px 10px -10px #4c2b63;
     }
@@ -72,8 +141,8 @@ header nav li{
         margin: 0;
         font-size: 24px;
         margin-left: 1rem;
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin-top: 15.5px;
+        margin-bottom: 15.5px;
     }
     .about {
         padding-top: 5%;
@@ -82,11 +151,10 @@ header nav li{
         display: block;
         height: 30px;
         width: 100%;
-    }
-    .menu-button {
         max-width: 30px;
-        margin-top: 1rem;
+        margin-top: 15px;
         margin-right: 1rem;
+        margin-bottom: 15px;
         background-image: url(/images/test.jpg);
         object-fit: cover;
     }
@@ -117,6 +185,7 @@ header nav li{
     }
 }
 
+/* LANDING-ABOUT */
 
 .about {
     padding-top: 0;
@@ -138,18 +207,17 @@ header nav li{
     float: right;
     position: relative;
     padding: 5%;
-    @media screen and (max-width: 639px) {
-        max-width: 50%;
-        }
+    
 }
 
 .content-left a.button {
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     scale: 100%;
     
     @media screen and (min-width: 415px) {
         margin-top: 20%;
+        margin-left: 10%;
     }
     @media screen and (min-width: 640px) {
         margin-top: 20%;
@@ -167,6 +235,7 @@ header nav li{
         scale: 200%;
     }
 }
+
 .bg-img-white {
     position: relative;
     top: -7rem;
@@ -189,6 +258,9 @@ header nav li{
         top: -45rem;
     }
 }
+
+/* LANDING-PROJECTS */
+
 .projects {
     position: relative;
     top: -12rem;
@@ -300,7 +372,7 @@ h3 {
     }
 }
 
-.featured-text a.button, #btn-all-projects {
+.button {
     display: block;
     width: fit-content;
     margin: auto;
@@ -333,10 +405,7 @@ h3 {
     }
 }
 
-
-
-
-
+/* CONTACT */
 
 .contact {
     position: relative;
@@ -425,6 +494,8 @@ input, textarea {
         padding-bottom: 10rem;
     }
 }
+
+/* FOOTER */
 
 footer {
     background-color: #cbc0d3;
