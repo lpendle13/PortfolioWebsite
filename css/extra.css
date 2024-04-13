@@ -78,7 +78,9 @@ header {
 nav {
     width: 100%;
     margin: auto;
+    background-color: #cbc0d3;
 }
+
 h1 {
     float: left;
     margin-left: 1rem;
