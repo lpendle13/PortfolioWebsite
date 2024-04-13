@@ -126,6 +126,7 @@ header nav li{
     height: 0;
     display: none;
     scale: 0;
+    float: right;
 }
 
 @media screen and (max-width: 639px) {
