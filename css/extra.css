@@ -154,6 +154,7 @@ header nav li{
         margin-right: 1rem;
         margin-bottom: 15px;
         background-image: url(/images/bars-solid.svg);
+        background-color: #4c2b63;
     }
 
     .menu-close-icon {
@@ -167,6 +168,7 @@ header nav li{
         top: 0;
         right: 0;
         background-image: url(/images/xmark-solid.svg);
+        background-color: aquamarine;
     }
     nav ul {
         width: 100%;
