@@ -121,8 +121,9 @@ header nav li{
     float: left;
     list-style-type: none;
 }
-.menu-btn {
-    float: right;
+.fa-solid {
+    width: 0;
+    height: 0;
 }
 
 @media screen and (max-width: 639px) {
@@ -146,28 +147,18 @@ header nav li{
     .about {
         padding-top: 5%;
     }
-    .menu-btn{
+    
+    .fa-solid {
+        float: right;
         display: block;
-        height: 30px;
-        width: 30px;
-        margin-top: 15px;
-        margin-right: 1rem;
-        margin-bottom: 15px;
-        background-image: url(/images/bars-solid.svg);
-    }
+        height: 16px;
+        width: 16px;
+        margin-top: 22px;
+        margin-bottom: 7px;
+        margin-right: 26px;   
+        scale: 200%; 
+}
 
-    .menu-close-icon {
-        display: block;
-        height: 30px;
-        width: 30px;
-        margin-top: 15px;
-        margin-right: 1rem;
-        margin-bottom: 15px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background-image: url(/images/xmark-solid.svg);
-    }
     nav ul {
         width: 100%;
         margin: 0;
