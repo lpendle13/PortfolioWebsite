@@ -114,16 +114,15 @@ header nav ul li{
     text-align: center;
     width: 100%;
     margin: 0;
-    padding-left: 2rem;
+    margin-left: 2rem;
    }
 
 header nav li{
     float: left;
     list-style-type: none;
 }
-#menu-btn {
+.menu-btn {
     float: right;
-    color: #11001c;
 }
 
 @media screen and (max-width: 639px) {
@@ -147,16 +146,27 @@ header nav li{
     .about {
         padding-top: 5%;
     }
-    #menu-btn{
+    .menu-btn{
         display: block;
         height: 30px;
-        width: 100%;
-        max-width: 30px;
+        width: 30px;
         margin-top: 15px;
         margin-right: 1rem;
         margin-bottom: 15px;
-        background-image: url(/images/test.jpg);
-        object-fit: cover;
+        background-image: url(/images/bars-solid.svg);
+    }
+
+    .menu-close-icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+        margin-top: 15px;
+        margin-right: 1rem;
+        margin-bottom: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(/images/xmark-solid.svg);
     }
     nav ul {
         width: 100%;
@@ -171,11 +181,16 @@ header nav li{
     header nav ul.open{
         height: auto;
     }
+    
+    header nav ul li {
+        margin-left: 0;
+    }
+
     header nav ul li a{
         padding: 10px;
         display: block;
         width: 100%;
-        margin: 0;    
+        margin: 0; 
     }
     .hamburger-menu {
         display: block;
