@@ -385,7 +385,7 @@ h3 {
     }
 }
 
-.button, .btn-submit {
+.button {
     display: block;
     width: fit-content;
     margin: auto;
@@ -396,9 +396,6 @@ h3 {
     }
     @media screen and (min-width: 1024px) {
         scale: 150%;
-    }
-    @media screen and (min-width: 1200px) {
-        scale: 175%;
     }
     @media screen and (min-width: 1440px) {
         scale: 200%;
@@ -423,32 +420,44 @@ h3 {
 .contact {
     position: relative;
     padding-top: 2rem;
-     top: -12rem;
+     top: -12rem;        
+     margin-bottom: -10rem;
     @media screen and (min-width: 350px) {
         top: -12rem;
+        margin-bottom: -10rem;
     }
     @media screen and (min-width: 500px) {
         top: -16rem;
+        margin-bottom: -12rem;
     }
     @media screen and (min-width: 640px) {
         top: -18rem;
+        margin-bottom: -12rem;
     }
     @media screen and (min-width: 800px) {
         top: -24rem;
+        margin-bottom: -18rem;
     }
     @media screen and (min-width: 1024px) {
         top: -30rem;
+        margin-bottom: -22rem;
     }
     @media screen and (min-width: 1600px) {
         top: -45rem;
+        margin-bottom: -30rem;
     }
     @media screen and (min-width: 2000px) {
         top: -60rem;
+        margin-bottom: -45rem;
     } 
     background-color: #fcfbfe;
     background-image: url(/images/bgshape-bottom.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;  
+}
+.bg-color-bottom {
+    width: 100%;
+    background-color: #f2edf5;
 }
 .contact h3 {
     width: 85%;
@@ -474,32 +483,30 @@ h3 {
     @media screen and (min-width: 500px) {
         margin-top: 4rem;
     }
-    @media screen and (min-width:640px) {
+    @media screen and (min-width: 640px) {
         width: 60%;
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
      @media screen and (min-width: 1024px) {
-        margin-top: 4rem;
+        margin-top: 8rem;
     }
     @media screen and (min-width: 1200px) {
-        margin-top: 15rem;
+        margin-top: 12rem;
         scale: 125%;
     }
     @media screen and (min-width: 1600px) {
         margin-top: 20rem;
         scale: 150%;
     }
-    @media screen and (min-width: 2000px) {
-        margin-top: 30rem;
-        scale: 150%;
-    } 
 
 }
 
 .form-box button {
     position: relative;
-    bottom: -0.5rem;
     margin: auto;
+    font-size: 14px;
+    border: 1px solid #4c2b63;
+    scale: 100%;
 }
 
 textarea {
@@ -543,6 +550,7 @@ hr {
     width: 70%;
     stroke: 1px;
     color: #4c2b63;
+    margin: auto;
 }
 .footerImgs {
     margin: 0.2rem;
