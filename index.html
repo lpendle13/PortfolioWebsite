@@ -5,96 +5,129 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laura Pendleton</title>
-    <link rel="stylesheet" href="css/extra.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   
   <body>
     <header>
-      <nav class="nav-menu">          
-        <h1><a href="index.html">LAURA PENDLETON</a></h1>
-        <a onclick="toggleList(this)" class="fa-solid fa-bars"></a>
-          <ul class="hamburger-menu" id="hamburger-menu">
-            <li class="navShadow"><a href="portfolio.html">Portfolio</a></li>
-            <li class="navShadow"><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+      <nav class="navbar navbar-expand-md py-2" style="background-color: #cbc0d3;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Laura Pendleton</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-md-0 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
       
-  <main>
-
     <section class="about">
-        <img src="images/test.jpg" alt="a drawing of me" class="profile-img">
-          <div class="content-left">
-            <h2>Laura Pendleton</h2>
-            <p>a little text about me</p>
-            <a href="about.html" class="button">about me</a> 
+        <div class="card" style="border: none;">
+            <img src="images/bgshape-top.svg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <img class="profile-image" src="images/test.jpg" alt="">
+              <h5 class="card-title">Laura Pendleton</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text-btn"><a class="btn btn-primary" id="about-btn" role="button" href="about.html">About Me</a></p>
+            </div>
           </div>
     </section>
-    <img src="images/bgshape-bottom-white.svg" class="bg-img-white">
+
     <section class="projects">
-      <h3>Projects</h3>
-      <div class="featured-projects">
-      <div class="featured-project">
-        <img src="images/test-horizontal.jpg" alt="test" class="featured-img-left">
-        <img src="images/test.jpg" alt="test" class="featured-img-left-mobile">
-        <div class="featured-text">
-          <h4>Bed &amp; Breakfast Website Design</h4>
-          <p>Full website design for a fictional bed and breakfast. Includes wireframes, style guides, and a fully functioning website.</p>
-          <a href="#" class="button">learn more</a>
-        </div>
-      </div>
-      <div class="featured-project">
-        <div class="featured-text">
-          <h4>Bed &amp; Breakfast Website Design</h4>
-          <p>Full website design for a fictional bed and breakfast. Includes wireframes, style guides, and a fully functioning website.</p>
-          <a href="#" class="button">learn more</a>
-        </div>
-        <img src="images/test-horizontal.jpg" alt="test" class="featured-img-right">
-        <img src="images/test.jpg" alt="test" class="featured-img-right-mobile">
-      </div>
-      <div class="featured-project">
-        <img src="images/test-horizontal.jpg" alt="test" class="featured-img-left">
-        <img src="images/test.jpg" alt="test" class="featured-img-left-mobile">
-        <div class="featured-text">
-          <h4>Bed &amp; Breakfast Website Design</h4>
-          <p>Full website design for a fictional bed and breakfast. Includes wireframes, style guides, and a fully functioning website.</p>
-          <a href="#" class="button">learn more</a>
-        </div>
-      </div>
-      <a href="portfolio.html" class="button" id="btn-all-projects">all projects</a>
-    </div>
-    </section>
+        <h3 class="proj-head">Projects</h3>
+        <div class="card mb-4 mx-3">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <img src="images/test-horizontal.jpg" class="img-fluid img-left" alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text-btn"><a class="btn btn-primary" id="proj-btn" role="button" href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 mx-3">
+            <div class="row g-0">
+              <div class="col-md-8 order-md-last">
+                <img src="images/test-horizontal.jpg" class="img-fluid img-right" alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text-btn"><a class="btn btn-primary" id="proj-btn" role="button" href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4 mx-3">
+            <div class="row g-0">
+              <div class="col-md-8">
+                <img src="images/test-horizontal.jpg" class="img-fluid img-left" alt="...">
+              </div>
+              <div class="col-md-4">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text-btn"><a class="btn btn-primary" id="proj-btn" role="button" href="#">Learn More</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="card-text-btn"><a class="btn btn-primary" id="about-btn" role="button" href="portfolio.html">All Projects</a></p>
+        </section>
 
     <section class="contact">
-      <h3>Contact Me</h3>
-      <div class="bg-color-bottom">
-
-      <div class="form-box">
-       <form>
-        <input type="text" placeholder="Full Name">
-        <input type="text" placeholder="Email">
-        <textarea placeholder="Type your message here"></textarea>
-        <div style="display: block; text-align: center;">
-            <button class="button btn-submit">Submit</button>
-        </div>
-      </form>
-     </div>
-      </div>
+        <div class="card" style="border: none;">
+            <img src="images/bgshape-bottom.svg" class="card-img" alt="...">
+            <div class="card-img-overlay" id="fix-pos">
+                <h3 class="card-title contact-head">Contact Me</h3>
+                <div class="bg-color-contact">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" placeholder="John Doe" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control" placeholder="example@gmail.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" placeholder="..." aria-label="With textarea" required></textarea>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+                </div>
+                <footer>
+                    <h3><a href="#">LAURA PENDLETON</a></h3>
+                    <hr>
+                    <ul class="footer-img-list">
+                      <li><img src="#" alt="1" class="footer-imgs"></li>
+                      <li><img src="#" alt="2" class="footer-imgs"></li>
+                      <li><img src="#" alt="3" class="footer-imgs"></li>
+                    </ul>
+                </footer>
+            </div>
+          </div> 
     </section>
 
-  </main>
-  <footer>
-    <h4><a href="#">LAURA PENDLETON</a></h4>
-    <hr>
-    <ul class="footer-img-list">
-      <li><img src="#" alt="1" class="footer-imgs"></li>
-      <li><img src="#" alt="2" class="footer-imgs"></li>
-      <li><img src="#" alt="3" class="footer-imgs"></li>
-    </ul>
-  </footer>
-
-    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
