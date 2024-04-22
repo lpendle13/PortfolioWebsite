@@ -7,15 +7,18 @@
 }
 
 .profile-image {
-  background-color: white;
   width: 50%;
   float: right;
   padding: 0;
   padding-right: 1rem;
   padding-top: 1rem;
+  -webkit-mask-image: url(/images/bgshape-top.svg);
   mask-image: url(/images/bgshape-top.svg);
+  -webkit-mask-size: 200%;
   mask-size: 200%;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: top right;
   mask-position: top right;
 }
 
